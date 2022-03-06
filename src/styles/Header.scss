@@ -1,5 +1,9 @@
-body {
-      background: linear-gradient(114.41deg, #37db51 21.16%, #3bbc0e 66.85%);
+.wrapper{
+      background-image: url("../images/background.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: -70px;
 }
 
 .arrow-down {
@@ -30,7 +34,6 @@ body {
       border-radius: 0.5px;
 }
 
-
 .d-flex {
       display: flex;
 }
@@ -39,11 +42,11 @@ body {
       justify-content: space-between;
 }
 
-.just-center{
+.just-center {
       justify-content: center;
 }
 
-.active{
+.active {
       font-weight: 700;
 }
 
@@ -79,33 +82,70 @@ body {
                   font-family: "Montserrat", sans-serif;
                   font-size: 18px;
             }
-            &-items{
+            &-items {
                   padding-top: 27px;
             }
-            &-shopping{
-                  &__logo{
+            &-shopping {
+                  &__logo {
                         margin-top: 10px;
                   }
-                  &__total{
+                  &__total {
                         padding-top: 27px;
                   }
             }
       }
 }
 
-.main{
-      &-description{
+.main {
+      &-description {
             margin-top: 60px;
-            &_title{
+            &_title {
                   font-family: "Montserrat", sans-serif;
                   font-weight: 800;
                   font-size: 48px;
             }
-            &_text{
+            &_text {
                   font-family: "Montserrat", sans-serif;
                   font-weight: 500;
                   font-size: 24px;
                   margin-top: 28px;
+            }
+      }
+      &-cards {
+            margin-top: 69px;
+            &-title {
+                  margin-top: 61px;
+                  h1 {
+                        font-size: 48px;
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 700;
+                  }
+            }
+            &-items {
+                  display: flex;
+                  justify-content: space-between;
+                  width: 236px;
+                  .card-item {
+                        padding-top: 38px;
+                        padding-left: 29px;
+                        padding-right: 29px;
+                        background-color: #fff;
+                        box-shadow: 7px 12px 28px rgba(0, 0, 0, 0.25);
+                        border-radius: 23px;
+                        
+                        // text-align: center;
+                        img{
+                              width: 159px;
+                              height: 144px;
+                        }
+                        p {
+                              margin-top: 10px;
+                              text-align: center;
+                              font-size: 20px;
+                              font-family: "Montserrat", sans-serif;
+                              font-weight: 600;
+                        }
+                  }
             }
       }
 }
